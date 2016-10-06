@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package>
+  <name>robot_leds</name>
+  <version>1.0.0</version>
+  <description>The robot_leds package, is meant to dynamically light up
+  or color robots in a multi robot environment to distinguish them
+  easily from each other</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag --> 
+  <maintainer email="LarsKistner@sr4l.de">Lars Kistner</maintainer>
+
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <license>BSD</license>
+
+
+  <!-- Url tags are optional, but mutiple are allowed, one per tag -->
+  <!-- Optional attribute type can be: website, bugtracker, or repository -->
+  <!-- Example: -->
+  <!-- <url type="website">http://wiki.ros.org/muplant_led</url> -->
+
+
+  <!-- Author tags are optional, mutiple are allowed, one per tag -->
+  <!-- Authors do not have to be maintianers, but could be -->
+  <author email="LarsKistner@sr4l.de">Lars Kistner</author> -->
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <run_depend>rospy</run_depend>
+</package>
