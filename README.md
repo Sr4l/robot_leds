@@ -38,6 +38,13 @@ sudo /etc/init.d/udev restart
 sudo systemctl restart udev.service
 ```
 
+after this you might want to add yourself to the grup dialout to use
+serial devices:
+
+```bash
+sudo usermod -a -G dialout $USER
+```
+
 You can now access original arduinos as `/dev/arduino_ftdi` and clones
 as `/dev/arduino_hl340`
 
