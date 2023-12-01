@@ -22,15 +22,15 @@ def read_response(ser):
             resp.append(data)
 
 def leds_off(ser):
-    ser.write(";")
+    ser.write(str.encode(";"))
     ser.flush()
     rospy.sleep(3)
-    ser.write("0,0,0,0,0,0;")
-    ser.write("1,0,0,0,0,0;")
+    ser.write(str.encode("0,0,0,0,0,0;"))
+    ser.write(str.encode("1,0,0,0,0,0;"))
     ser.flush()
 
 def boden_leds_on(ser, hsv):
-    ser.write("0,0,0,{},{},{};".format(*hsv))
+    ser.write(str.encode("0,0,0,{},{},{};".format(*hsv)))
     ser.flush()
 
 def boden_get_hsv_color():
